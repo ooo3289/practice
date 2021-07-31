@@ -1,0 +1,4 @@
+.clear::after{content: "";clear: both;display: block;}
+.blind{width: 1px;height: 1px;position: absolute;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);}
+.left{float: left;}
+.right{float: right;}
