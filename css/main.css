@@ -4,10 +4,10 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 /* font-family: 'STIX Two Text', serif; */
 body { 
-    font-size: 16px; 
-    padding-top: 70px; 
+    font-size: 10px; 
+    /* padding-top: 70px;  */
     font-family: 'Noto Sans KR', sans-serif; 
-    color: #000; 
+    color: #212121; 
     letter-spacing: -0.025em; 
 } 
 
@@ -31,13 +31,29 @@ body {
     width: 100%;
     height: 100%;
 }
-.main_slide .swiper-slide .img_wrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.main_slide .swiper-slide {
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.main_slide .swiper-slide .img_wrap img {
-    margin: -130px auto 0;
+.main_slide .swiper-slide.item01.swiper-slide-active {
+    background-image: url('/image/artist_01.jpg') !important;
+}
+/* .main_slide .swiper-slide.swiper-slide-active:nth-child(1) {
+    background-image: url('image/artist_01.jpg');
+} */
+/* NAV */
+nav {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    z-index: 200;
+}
+nav ul {}
+nav ul li {
+    margin-bottom: 20px;
+}
+nav ul li a {
     display: block;
-    width: 1000px;
+    font-size: 5rem;
+    color: #FF3901;
 }
